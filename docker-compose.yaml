@@ -10,5 +10,6 @@ services:
         privileged: true
         volumes: 
           - "/dev:/dev"
+          - "/media:/media"
         environment: 
           - DISPLAY=unix$DISPLAY
