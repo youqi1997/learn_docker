@@ -1,0 +1,14 @@
+version: "3"
+services: 
+      kit:
+        image: ubuntu:latest
+        container_name: kit_test
+        ports:
+          - 6080:80
+          - 5900:5900
+        tty : true
+        privileged: true
+        volumes: 
+          - "/dev:/dev"
+        environment: 
+          - DISPLAY=unix$DISPLAY
